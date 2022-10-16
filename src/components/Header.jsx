@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <body className="p-6">
+    <div className="p-6 rounded flex-auto">
       <div className="bg-black p-4 rounded">
         <div className="flex items-center justify-between flex-wrap">
           <div className="block">
@@ -16,7 +16,7 @@ function Header() {
           </nav>
         </div>
       </div>
-    </body>
+    </div>
   )
 }
 export default Header

@@ -7,12 +7,12 @@ import Home from './components/pages/Home';
 
 function App() {
   return (
-    <body class="h-screen bg-gradient-to-b 
+    <div className="content-center h-screen bg-gradient-to-b 
     from-black 
     to-black
-    via-gray-900" >
+    via-gray-900
+    flex-auto" >
     <Header/>
-  
         <Routes>
           <Route exact path="/Home" element={<Home/>}>
           </Route>
@@ -24,7 +24,7 @@ function App() {
           </Route>
 
         </Routes>
-      </body>
+      </div>
   );
 }
 
