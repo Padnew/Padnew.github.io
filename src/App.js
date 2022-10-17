@@ -7,11 +7,15 @@ import Home from './components/pages/Home';
 
 function App() {
   return (
-    <div className="content-center h-screen bg-gradient-to-b 
+    <div className="h-screen w-screen
+    bg-gradient-to-b 
     from-black 
     to-black
     via-gray-900
-    flex-auto" >
+    flex
+    flex-col
+    items-center
+    " >
     <Header/>
         <Routes>
           <Route exact path="/Home" element={<Home/>}>
