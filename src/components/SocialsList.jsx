@@ -1,15 +1,25 @@
-import React from 'react'
-import { SocialIcon } from 'react-social-icons'
-export default function SocialsList({socials}) {
+import React from "react";
+import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
+
+export default function SocialsList({ socials }) {
   return (
     <ul>
-      {socials.map((item)=>(
-        <span className='position-relative rounded justify-center w-3/5'>
-        <span key={item.id} className='bg-black p-5 m-2 space-x-3 rounded hover:text-white'>{item.name}
-          <SocialIcon url={item.iconLink} />
-        </span>
-        </span>
-    ))}
+      {socials.map((item) => (
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="grid grid-cols-3"
+        >
+          <span
+            url={item.url}
+            key={item.id}
+            className="bg-black p-4 mx-2 my-2 w-fit basis-1/3 inline-block rounded"
+          >
+            <SocialIcon url={item.iconLink}/>
+          </span>
+        </motion.div>
+      ))}
     </ul>
-  )
+  );
 }
