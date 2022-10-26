@@ -27,7 +27,7 @@ export default function Stack() {
           </div>
           <div className="bg-gray-900 text-green-500 p-4 my-2 rounded">
             <h1 className="text-xxl font-bold">Miscellaneous</h1>
-            Git - Visual basics
+            -
           </div>
         </div>
       </div>
