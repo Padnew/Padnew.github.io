@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/padnew.github.io/static/css/main.4ab9620d.css",
-    "main.js": "/padnew.github.io/static/js/main.c815efbc.js",
-    "index.html": "/padnew.github.io/index.html",
-    "main.4ab9620d.css.map": "/padnew.github.io/static/css/main.4ab9620d.css.map",
-    "main.c815efbc.js.map": "/padnew.github.io/static/js/main.c815efbc.js.map"
+    "main.css": "/paddy.software/static/css/main.4ab9620d.css",
+    "main.js": "/paddy.software/static/js/main.c815efbc.js",
+    "index.html": "/paddy.software/index.html",
+    "main.4ab9620d.css.map": "/paddy.software/static/css/main.4ab9620d.css.map",
+    "main.c815efbc.js.map": "/paddy.software/static/js/main.c815efbc.js.map"
   },
   "entrypoints": [
     "static/css/main.4ab9620d.css",
