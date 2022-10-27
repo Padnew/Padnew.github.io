@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ab9620d.css",
-    "main.js": "/static/js/main.c815efbc.js",
-    "index.html": "/index.html",
-    "main.4ab9620d.css.map": "/static/css/main.4ab9620d.css.map",
-    "main.c815efbc.js.map": "/static/js/main.c815efbc.js.map"
+    "main.css": "/paddy.software/static/css/main.85a83e65.css",
+    "main.js": "/paddy.software/static/js/main.ef40873c.js",
+    "index.html": "/paddy.software/index.html",
+    "main.85a83e65.css.map": "/paddy.software/static/css/main.85a83e65.css.map",
+    "main.ef40873c.js.map": "/paddy.software/static/js/main.ef40873c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ab9620d.css",
-    "static/js/main.c815efbc.js"
+    "static/css/main.85a83e65.css",
+    "static/js/main.ef40873c.js"
   ]
 }
