@@ -25,10 +25,10 @@ export default function Stack() {
             <h1 className="text-xxl font-bold">Languages</h1>
             Java - C - C# - Haskell - Javascript - HTML - CSS - SQL - PHP
           </div>
-          <div className="bg-gray-900 text-green-500 p-4 my-2 rounded">
+          {/* <div className="bg-gray-900 text-green-500 p-4 my-2 rounded">
             <h1 className="text-xxl font-bold">Miscellaneous</h1>
             -
-          </div>
+          </div> */}
         </div>
       </div>
     </>

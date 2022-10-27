@@ -25,7 +25,7 @@ export default function Home() {
           I am a 21 year old software engineering student from Scotland. <br />
         </p>
       </div>
-      <div className="text-xxl font-semibold text-green-500 justify-between rounded text-center overflow-auto w-3/5">
+      <div className="text-xxl font-semibold text-green-500 justify-between rounded text-center overflow-auto w-2/9">
         <h1 className="bg-black rounded w-100">Socials</h1>
           <SocialsList socials={socials} />
       </div>
