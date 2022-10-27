@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/paddy.software/static/css/main.85a83e65.css",
-    "main.js": "/paddy.software/static/js/main.ef40873c.js",
-    "index.html": "/paddy.software/index.html",
-    "main.85a83e65.css.map": "/paddy.software/static/css/main.85a83e65.css.map",
-    "main.ef40873c.js.map": "/paddy.software/static/js/main.ef40873c.js.map"
+    "main.css": "/static/css/main.85a83e65.css",
+    "main.js": "/static/js/main.ef40873c.js",
+    "index.html": "/index.html",
+    "main.85a83e65.css.map": "/static/css/main.85a83e65.css.map",
+    "main.ef40873c.js.map": "/static/js/main.ef40873c.js.map"
   },
   "entrypoints": [
     "static/css/main.85a83e65.css",
