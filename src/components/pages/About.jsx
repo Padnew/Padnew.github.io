@@ -45,9 +45,11 @@ export default function About() {
           networking and concurrency as well as web dev. Though quite theory
           based, the modules have also had me pick up PHP, learn PHPMyAdmin as
           well as Javascript, though I have been spending a good amount of
-          personal time learning React and Javascript regardless. I've also
-          spent time learning Python to try and replace Java as my go to
-          language.
+          personal time learning React and Javascript regardless. I'd also
+          spent personal time learning Python to replace Java as my goto language.
+          In the process I got facinated with Machine learning and AI so I decided I would learn 
+          more in depth with PyTorch with my recently developed Python knowledge. 
+          I taught myself using some resources online and have thouroughly enjoyed it.
         </p>
       </div>
     </div>
