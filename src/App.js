@@ -17,6 +17,7 @@ function App() {
     flex-col
     items-center
     font-mono
+    overflow-auto
     "
     >
       <Header />
