@@ -4,19 +4,21 @@ import { motion } from "framer-motion";
 
 export default function SocialsList({ socials }) {
   return (
-    <ul>
+    <ul style={{ overflow: "hidden" }}>
       {socials.map((item) => (
         <motion.div
+          key={item.id}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="inline-block"
+          style={{ overflow: "hidden" }}
+          className="inline-block py-6"
         >
           <span
             url={item.url}
-            key={item.id}
-            className="bg-black p-4 mx-2 my-2 w-fit basis-1/3 inline-block rounded"
+            className="bg-black px-4 py-6 mx-2 my-2 w-fit basis-1/3 rounded"
+            style={{ overflow: "hidden" }}
           >
-            <SocialIcon url={item.iconLink}/>
+            <SocialIcon url={item.iconLink} />
           </span>
         </motion.div>
       ))}
