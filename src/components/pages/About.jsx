@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="bg-black text-green-500 p-4 m-6 rounded flex-col w-3/5 text-center overflow-auto">
+    <div className="bg-black text-green-500 p-4 m-6 rounded flex-col w-4/5 text-center overflow-auto">
       <h1 className="text-xxxl text-green-500 mr-4 p 6 font-bold">
         About myself
       </h1>
@@ -42,9 +42,8 @@ export default function About() {
           I was still happy with it.
           <h2 className="text-xxl font-bold">Present/3rd year</h2>I am currently
           in 3rd year, our modules have covered more Functional Programming,
-          networking and concurrency as well as web dev. Though quite theory
-          based, the modules have also had me pick up PHP, learn PHPMyAdmin as
-          well as Javascript, though I have been spending a good amount of
+          Algorithms and AI as well as Web and App development. Though quite theory
+          based, the modules have also had me pick up PHP, Javascript, React Native, though I have been spending a good amount of
           personal time learning React and Javascript regardless. I'd also
           spent personal time learning Python to replace Java as my goto language.
           In the process I got facinated with Machine learning and AI so I decided I would learn 

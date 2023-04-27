@@ -4,7 +4,7 @@ import React from "react";
 export default function Stack() {
   return (
     <>
-      <div className="block bg-black text-green-500 p-4 m-6 rounded content-center w-3/5">
+      <div className="block bg-black text-green-500 p-4 m-6 rounded content-center w-4/5">
         <h1 className="block text-xxxl text-green-500 mr-4 font-semibold text-center w-fit-content">
           My stack
         </h1>

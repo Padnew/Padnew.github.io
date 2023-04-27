@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="block bg-black text-green-500 p-4 m-6 rounded text-xxxl font-semibold text-center w-3/5">
+      <div className="block bg-black text-green-500 p-4 m-6 rounded text-xxxl font-semibold text-center w-4/5">
         <Typewriter
           onInit={(typeWriter) => {
             typeWriter

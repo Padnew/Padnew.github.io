@@ -13,14 +13,15 @@ function App() {
     from-black 
     to-black
     via-gray-900
-    flex
-    flex-col
-    items-center
     font-mono
     overflow-auto
     "
     >
-      <Header />
+      <div className="items-right">
+        <Header />
+      </div>
+      <div className="flex flex-col items-center">
+
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
 
@@ -30,6 +31,7 @@ function App() {
 
         <Route exact path="/Stack" element={<Stack />}></Route>
       </Routes>
+      </div>
     </div>
   );
 }

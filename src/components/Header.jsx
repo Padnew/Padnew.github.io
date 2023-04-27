@@ -3,17 +3,15 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="rounded w-3/5">
-      <div className="bg-black p-4 rounded">
-        <div className="items-center justify-between flex-wrap">
-          <div className="block">
+      <div className="bg-black p-4">
+          {/* <div className="block">
             <Link to="/Home">
               <span className="font-semibold text-xxxl text-green-500">
                 Welcome
               </span>
             </Link>
-          </div>
-          <nav className="block">
+          </div> */}
+          <nav className="block text-right">
             <Link to="/Home">
               <span className="inline-block text-green-500 hover:text-white mr-4">
                 home
@@ -30,9 +28,7 @@ function Header() {
               </span>
             </Link>
           </nav>
-        </div>
       </div>
-    </div>
   );
 }
 export default Header;
