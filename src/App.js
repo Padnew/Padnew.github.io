@@ -9,12 +9,13 @@ function App() {
   return (
     <div
       className="h-screen w-screen
-    bg-gradient-to-b 
+    bg-gradient-to-b
     from-black 
     to-black
     via-gray-900
     font-mono
     overflow-auto
+    text-fuchsia-700
     "
     >
       <Header />

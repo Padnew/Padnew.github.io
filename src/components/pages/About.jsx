@@ -2,13 +2,12 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="bg-black text-green-500 px-2 m-6 rounded flex-row w-4/5 text-center overflow-auto">
-      <h1 className="text-xxxl text-green-500 mr-4 p 6 font-bold">
-        About myself
-      </h1>
+    <div className="bg-black px-2 m-6 rounded flex-row w-4/5 text-center overflow-auto">
+      <h1 className="text-xxxl  mr-4 p 6 font-bold">About myself</h1>
       {/*  w-1/2 float-left */}
       <div className="text-left">
         <h2 className="text-xxxl font-bold">Education</h2>
+        <hr className="h-px my-2 bg-white border-0" />
         <div>
           In 2019 attended the City of Glasgow College for Software Development
           (HND), a 2 year course of which I was awarded an overall A.
