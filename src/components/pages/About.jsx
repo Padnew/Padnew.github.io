@@ -2,21 +2,22 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="bg-black text-green-500 p-4 m-6 rounded flex-col w-4/5 text-center overflow-auto">
+    <div className="bg-black text-green-500 px-2 m-6 rounded flex-row w-4/5 text-center overflow-auto">
       <h1 className="text-xxxl text-green-500 mr-4 p 6 font-bold">
         About myself
       </h1>
+      {/*  w-1/2 float-left */}
       <div className="text-left">
-        <h2 className="text-xxxl font-bold ">College</h2>
-        <p>
+        <h2 className="text-xxxl font-bold">Education</h2>
+        <div>
           In 2019 attended the City of Glasgow College for Software Development
           (HND), a 2 year course of which I was awarded an overall A.
-          <h2 className="text-xxl font-bold">First year</h2>
+          <h2 className="text-xl font-bold">First year / College</h2>
           During the first year we had modules which covered Object orientated
           programming, web development, databases and computer architecure. The
           main projects we made were fairly small scale, SQL, HTML and Java
           based. I eventually passed the year with an overall grade of an A.
-          <h2 className="text-xxl font-bold">Second year</h2>
+          <h2 className="text-xl font-bold">Second year / College</h2>
           The second year was more intensive and project based, most of my
           classes were heavy on Object Orientated programming using C#. They
           further consolidated concepts such as abstract datatypes (inheritance,
@@ -27,12 +28,11 @@ export default function About() {
           Framework. I passed this year with an overall grade of an A as well.
           This then allowed me to apply for a variety of universities to study
           further.
-        </p>
-        <h2 className="text-xxxl font-bold ">University</h2>
-        <p>
+        </div>
+        <div>
           I got a direct entry into 2nd year at the University of Strathclyde
           for Software Engineering (BSc), a 4 year course.
-          <h2 className="text-xxl font-bold">2nd year</h2>
+          <h2 className="text-xl font-bold">Second year / University</h2>
           During my first year at the university which was actually the 2nd year
           of the course I had modules which covered Logic and Algorithms, User
           and Data Modelling, functional thinking and advanced programming. I
@@ -40,17 +40,23 @@ export default function About() {
           solidified my Java knowledge in these modules. At the end of the year
           I finished just 2 marks off a distinction, though not the best result
           I was still happy with it.
-          <h2 className="text-xxl font-bold">Present/3rd year</h2>I am currently
-          in 3rd year, our modules have covered more Functional Programming,
-          Algorithms and AI as well as Web and App development. Though quite theory
-          based, the modules have also had me pick up PHP, Javascript, React Native, though I have been spending a good amount of
-          personal time learning React and Javascript regardless. I'd also
-          spent personal time learning Python to replace Java as my goto language.
-          In the process I got facinated with Machine learning and AI so I decided I would learn 
-          more in depth with PyTorch with my recently developed Python knowledge. 
-          I taught myself using some resources online and have thouroughly enjoyed it.
-        </p>
+          <h2 className="text-xl font-bold">Third year / University</h2>I am
+          currently in 3rd year, our modules have covered more Functional
+          Programming, Algorithms and AI as well as Web and App development.
+          Though quite theory based, the modules have also had me pick up PHP,
+          Javascript, React Native, though I have been spending a good amount of
+          personal time learning React and Javascript regardless. I'd also spent
+          personal time learning Python to replace Java as my goto language. In
+          the process I got facinated with Machine learning and AI so I decided
+          I would learn more in depth with PyTorch with my recently developed
+          Python knowledge. I taught myself using some resources online and have
+          thouroughly enjoyed it.
+        </div>
       </div>
+      {/* <div className="float-right w-1/2">
+        <h2 className="text-xxxl font-bold float-right">Personal</h2>
+        <div></div>
+      </div> */}
     </div>
   );
 }

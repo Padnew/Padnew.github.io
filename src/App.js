@@ -17,20 +17,17 @@ function App() {
     overflow-auto
     "
     >
-      <div className="items-right">
-        <Header />
-      </div>
+      <Header />
       <div className="flex flex-col items-center">
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
 
-      <Routes>
-        <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/Home" element={<Home />}></Route>
 
-        <Route exact path="/Home" element={<Home />}></Route>
+          <Route exact path="/About" element={<About />}></Route>
 
-        <Route exact path="/About" element={<About />}></Route>
-
-        <Route exact path="/Stack" element={<Stack />}></Route>
-      </Routes>
+          <Route exact path="/Stack" element={<Stack />}></Route>
+        </Routes>
       </div>
     </div>
   );
