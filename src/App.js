@@ -15,7 +15,8 @@ function App() {
     via-gray-900
     font-mono
     overflow-auto
-    text-fuchsia-700
+    text-green-600
+    text-base
     "
     >
       <Header />

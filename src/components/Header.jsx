@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="bg-black p-4">
-      <nav className="flex justify-between items-center">
-        <span className="text-xxl hover:text-white">
+      <nav className="justify-between items-center">
+        <span className="text-xl hover:text-white">
           <Link to="/Home" className="text-left">
             /paddy.software/
           </Link>

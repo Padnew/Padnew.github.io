@@ -1,10 +1,10 @@
 import React from "react";
-
+import { FaPython } from "react-icons/fa";
 export default function Stack() {
   return (
     <>
       <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center">
-        <h1 className="block text-xxxl mr-2 font-semibold text-center w-fit-content">
+        <h1 className="block text-xxxl mr-2 font-semibold text-center">
           My stack
         </h1>
         <p>
@@ -25,6 +25,7 @@ export default function Stack() {
             <h1 className="text-xxl font-bold mb-2">Languages</h1>
             <p>
               Java - Haskell - C# - Javascript - HTML - CSS - SQL - PHP - Python
+              {/* <FaPython /> */}
             </p>
           </div>
         </div>
