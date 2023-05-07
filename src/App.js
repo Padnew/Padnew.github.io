@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
-import Stack from "./components/pages/Stack";
-import About from "./components/pages/About";
-import Home from "./components/pages/Home";
+import Stack from "./components/pages/stack";
+import Studies from "./components/pages/studies";
+import Home from "./components/pages/home";
 
 function App() {
   return (
@@ -25,11 +25,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
 
-          <Route exact path="/Home" element={<Home />}></Route>
+          <Route exact path="/home" element={<Home />}></Route>
 
-          <Route exact path="/About" element={<About />}></Route>
+          <Route exact path="/studies" element={<Studies />}></Route>
 
-          <Route exact path="/Stack" element={<Stack />}></Route>
+          <Route exact path="/stack" element={<Stack />}></Route>
         </Routes>
       </div>
     </div>

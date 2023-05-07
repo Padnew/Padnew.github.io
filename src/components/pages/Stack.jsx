@@ -11,10 +11,9 @@ export default function Stack() {
         </h1>
         <p>
           I've been lucky enough to be exposed to a good variety of
-          technologies, languages and frameworks. However the languages I tend
-          to resort to by default is Java and Python. Through my career I hope
-          to expand my knowledge and experience of different tech as I'm always
-          up for learning something new.
+          technologies, languages and frameworks. Through my career I hope to
+          expand my knowledge and experience of different tech as I'm always up
+          for learning something new.
         </p>
         <div className="bg-black rounded grid grid-cols-2 mt-3">
           <div className="bg-gray-900 p-2 mr-1 rounded px-2 overflow-y-scroll">

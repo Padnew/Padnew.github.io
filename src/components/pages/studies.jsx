@@ -1,13 +1,12 @@
 import React from "react";
 
-export default function About() {
+export default function studies() {
   return (
     <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center">
       <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-400">
-        About myself
+        Studies
       </h1>
       <div className="text-left">
-        <h2 className="text-xxxl font-bold text-sky-400">Education</h2>
         <hr className="h-px my-2 bg-white border-0" />
         <div>
           <h2 className="text-xl font-bold text-sky-400">
@@ -36,7 +35,10 @@ export default function About() {
           universities to study further.
         </div>
         <div>
-          I got a direct entry into 2nd year at the University of Strathclyde
+          I got a direct entry into 2nd year at the{" "}
+          <span className="font-bold text-red-500">
+            University of Strathclyde
+          </span>{" "}
           for Software Engineering (BSc).
           <h2 className="text-xl font-bold text-sky-400">
             Second year / University (BSc)

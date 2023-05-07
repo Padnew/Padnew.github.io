@@ -28,12 +28,12 @@ function LanguagesBlock() {
         <DiHaskell className="text-xxxxl align-center text-red-500" />
       </div>
       <div className="flex align-center">
-        HTML5
-        <DiHtml5 className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
         C#
         <DiCode className="text-xxxxl align-center text-red-500" />
+      </div>
+      <div className="flex align-center">
+        HTML5
+        <DiHtml5 className="text-xxxxl align-center text-red-500" />
       </div>
       <div className="flex align-center">
         PHP

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  DiPostgresql,
-  DiCode,
-  DiBootstrap,
-  DiDotnet,
-  DiReact,
-} from "react-icons/di";
+import { DiPostgresql, DiBootstrap, DiDotnet, DiReact } from "react-icons/di";
 import { SiTailwindcss, SiPytorch } from "react-icons/si";
 function ToolsBlock() {
   return (

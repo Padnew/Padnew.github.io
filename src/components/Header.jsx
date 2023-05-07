@@ -5,21 +5,17 @@ function Header() {
   return (
     <div className="bg-black p-4 text-sky-400">
       <nav className="justify-between items-center">
-        <span className="text-xl hover:text-red-500">
-          <Link to="/Home" className="text-left">
-            /paddy.software/
-          </Link>
-        </span>
+        <span className="text-xl">/paddy.software/</span>
         <div>
-          <Link to="/Home">
+          <Link to="/home">
             <span className="hover:text-red-500 mr-2">home</span>
           </Link>
           <span>/</span>
-          <Link to="/About">
-            <span className="hover:text-red-500 mx-2">about</span>
+          <Link to="/studies">
+            <span className="hover:text-red-500 mx-2">studies</span>
           </Link>
           <span>/</span>
-          <Link to="/Stack">
+          <Link to="/stack">
             <span className="hover:text-red-500 mx-2">my stack</span>
           </Link>
           <span>/</span>
