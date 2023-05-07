@@ -3,8 +3,8 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   return (
     <>
-      <div className="relative">
-        <div className="inset-0 bg-green-500 rounded-l opacity-50 blur absolute"></div>
+      <div className="relative text-sky-400">
+        <div className="inset-0 bg-sky-300 rounded-l opacity-50 blur absolute"></div>
         <div className="relative block bg-black rounded-xl p-4 m-3 text-xxxl font-semibold text-center">
           <Typewriter
             onInit={(typeWriter) => {
@@ -17,7 +17,7 @@ const Hero = () => {
                 .start();
             }}
           />
-          <p className="text-xl font-semibold text-center">
+          <p className="text-xl font-semibold text-center text-sky-600">
             A 21 year old software engineering student from Glasgow, Scotland.
           </p>
         </div>

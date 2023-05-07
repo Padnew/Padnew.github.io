@@ -1,10 +1,12 @@
 import React from "react";
-import { FaPython } from "react-icons/fa";
+import LanguagesBlock from "../LanguagesBlock";
+import ToolsBlock from "../ToolsBlock";
+
 export default function Stack() {
   return (
     <>
       <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center">
-        <h1 className="block text-xxxl mr-2 font-semibold text-center">
+        <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-400">
           My stack
         </h1>
         <p>
@@ -15,18 +17,16 @@ export default function Stack() {
           up for learning something new. Recently I have taken a large interest
           in ML, learning PyTorch and other supporting libraries.
         </p>
-
-        <div className="bg-black rounded flex overflow-hidden mt-3">
-          <div className="bg-gray-900 p-2 mr-1 rounded w-1/2 flex flex-col px-2">
-            <h1 className="text-xxl font-bold mb-2">Frameworks and Tools</h1>
-            <p>ASP.Net - Bootstrap - React - Tailwind - PyTorch</p>
+        <div className="bg-black rounded grid grid-cols-2 mt-3">
+          <div className="bg-gray-900 p-2 mr-1 rounded px-2 overflow-y-scroll">
+            <h1 className="text-xxl font-bold mb-2 text-sky-400">
+              Frameworks and Tools
+            </h1>
+            <ToolsBlock />
           </div>
-          <div className="bg-gray-900 p-2 rounded w-1/2 flex flex-col px-2">
-            <h1 className="text-xxl font-bold mb-2">Languages</h1>
-            <p>
-              Java - Haskell - C# - Javascript - HTML - CSS - SQL - PHP - Python
-              {/* <FaPython /> */}
-            </p>
+          <div className="bg-gray-900 p-2 rounded px-2 overflow-y-scroll">
+            <h1 className="text-xxl font-bold mb-2 text-sky-400">Languages</h1>
+            <LanguagesBlock />
           </div>
         </div>
       </div>

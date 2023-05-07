@@ -15,7 +15,7 @@ export default function SocialsList({ socials }) {
         >
           <span
             url={item.url}
-            className="bg-black px-4 py-6 mx-2 my-2 w-fit basis-1/3 rounded"
+            className="bg-black px-4 py-6 mx-2 my-2 w-fit basis-1/3 rounded hover:border border-sky-500"
             style={{ overflow: "hidden" }}
           >
             <SocialIcon url={item.iconLink} />
