@@ -18,7 +18,6 @@ function App() {
     text-sky-600
     text-base
     border-sky-500
-    align-center
     "
     >
       <Header />

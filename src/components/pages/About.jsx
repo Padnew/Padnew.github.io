@@ -3,10 +3,9 @@ import React from "react";
 export default function About() {
   return (
     <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center">
-      <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-500">
+      <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-400">
         About myself
       </h1>
-      {/*  w-1/2 float-left */}
       <div className="text-left">
         <h2 className="text-xxxl font-bold text-sky-400">Education</h2>
         <hr className="h-px my-2 bg-white border-0" />

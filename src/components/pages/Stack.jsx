@@ -14,8 +14,7 @@ export default function Stack() {
           technologies, languages and frameworks. However the languages I tend
           to resort to by default is Java and Python. Through my career I hope
           to expand my knowledge and experience of different tech as I'm always
-          up for learning something new. Recently I have taken a large interest
-          in ML, learning PyTorch and other supporting libraries.
+          up for learning something new.
         </p>
         <div className="bg-black rounded grid grid-cols-2 mt-3">
           <div className="bg-gray-900 p-2 mr-1 rounded px-2 overflow-y-scroll">
