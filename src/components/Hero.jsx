@@ -18,7 +18,7 @@ const Hero = () => {
             }}
           />
           <p className="text-xl font-semibold text-sky-600">
-            A 21 year old computer science student from Glasgow, Scotland.
+            A full stack software engineer from Glasgow, Scotland.
           </p>
         </div>
       </div>

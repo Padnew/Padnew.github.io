@@ -5,7 +5,7 @@ import ToolsBlock from "../ToolsBlock";
 export default function Stack() {
   return (
     <>
-      <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center">
+      <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center overflow">
         <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-400">
           My stack
         </h1>
