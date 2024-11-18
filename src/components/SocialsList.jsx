@@ -1,11 +1,12 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-
-export default function SocialsList({ socials }) {
+import { Group } from "@mantine/core";
+import Socials from "../data/SocialsData";
+export default function SocialsList() {
   return (
-    <ul style={{ overflow: "hidden" }}>
-      {socials.map((item) => (
+    <Group style={{ overflow: "hidden" }}>
+      {Socials.map((item) => (
         <motion.div
           key={item.id}
           whileHover={{ scale: 1.1 }}
@@ -22,6 +23,6 @@ export default function SocialsList({ socials }) {
           </span>
         </motion.div>
       ))}
-    </ul>
+    </Group>
   );
 }

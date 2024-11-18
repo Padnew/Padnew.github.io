@@ -1,15 +1,15 @@
 import React from "react";
 import SocialsList from "./SocialsList";
-import { useState } from "react";
-import SocialsData from "../data/SocialsData";
-const SocialsBlock = () => {
-  const [socials] = useState(SocialsData);
+import { Card, Stack, Title } from "@mantine/core";
+export const SocialsBlock = () => {
   return (
-    <div className="relative mt-5 text-xxl font-semibold justify-between rounded text-center overflow-auto w-2/9 ">
-      <h1 className="bg-black rounded text-sky-400">Socials</h1>
-      <SocialsList socials={socials} />
-    </div>
+    <Card bg="inherit">
+      <Stack align="center" justify="center">
+        <Card bg="black" h="fit-content" py={5}>
+          <Title c="cyan">Socials</Title>
+        </Card>
+        <SocialsList />
+      </Stack>
+    </Card>
   );
 };
-
-export default SocialsBlock;
