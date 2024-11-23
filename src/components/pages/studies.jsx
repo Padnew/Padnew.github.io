@@ -1,26 +1,31 @@
-import React from "react";
+import { Card, Stepper, Title, useMantineTheme } from "@mantine/core";
+import { React, useState } from "react";
 
-export default function studies() {
+export default function Studies() {
+  const [activeSection, setActiveSection] = useState(1);
+  const theme = useMantineTheme();
   return (
-    <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center">
-      <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-400">
+    <Card
+      display="block"
+      bg="black"
+      ta="center"
+      w="80%"
+      c={theme.colors.blue[4]}
+      mt={15}
+    >
+      <Title fz={32} fw={400} mb={10}>
         Studies
-      </h1>
-      <div className="text-left">
-        <hr className="h-px my-2 bg-white border-0" />
-        <div>
-          <h2 className="text-xl font-bold text-sky-400">
-            First year / College (HND)
-          </h2>
+      </Title>
+      <Stepper active={activeSection} onStepClick={setActiveSection} ta="left">
+        <Stepper.Step label="HNC" description="CoGC (2020)">
           During the first year we had modules which covered Object orientated
           programming, web development, databases and computer architecure. The
           main projects we made were fairly small scale,{" "}
           <span className="font-bold text-red-500">SQL, HTML </span>and{" "}
           <span className="font-bold text-red-500">Java </span>
           based. I eventually passed the year with an overall grade of an A.
-          <h2 className="text-xl font-bold text-sky-400">
-            Second year / College (HND)
-          </h2>
+        </Stepper.Step>
+        <Stepper.Step label="HND" description="CoGC (2021)">
           The second year was more intensive and project based, most of my
           classes were heavy on Object Orientated programming (inheritance,
           polymorphism and encapsulation) using{" "}
@@ -33,16 +38,8 @@ export default function studies() {
           in C# and Entity Framework. I passed this year with an overall grade
           of an A as well. This then allowed me to apply for a variety of
           universities to study further.
-        </div>
-        <div>
-          I got a direct entry into 2nd year at the{" "}
-          <span className="font-bold text-red-500">
-            University of Strathclyde
-          </span>{" "}
-          for Software Engineering (BSc).
-          <h2 className="text-xl font-bold text-sky-400">
-            Second year / University (BSc)
-          </h2>
+        </Stepper.Step>
+        <Stepper.Step label="2nd Year (BSc)" description="Strathclyde (2022)">
           During my first year at the university which was the 2nd year of the
           course I had modules which covered Logic and Algorithms, User and Data
           Modelling, functional thinking and advanced programming. I picked up a
@@ -52,9 +49,8 @@ export default function studies() {
           solidified my Java knowledge in these modules. At the end of the year
           I finished just 2 marks off a distinction, though not the best result
           I was still happy with it.
-          <h2 className="text-xl font-bold text-sky-400">
-            Third year / University (BSc)
-          </h2>
+        </Stepper.Step>
+        <Stepper.Step label="3nd Year (BSc)" description="Strathclyde (2023)">
           During 3rd year my modules covered more Functional Programming,
           Algorithms and AI as well as Web and App development. Though quite
           theory based, the modules have also had me pick up{" "}
@@ -70,12 +66,18 @@ export default function studies() {
           <span className="font-bold text-red-500">Pytorch </span>
           with my recently developed Python knowledge. I taught myself using
           some resources online and have thoroughly enjoyed it.
-        </div>
-      </div>
-      {/* <div className="float-right w-1/2">
-        <h2 className="text-xxxl font-bold float-right">Personal</h2>
-        <div></div>
-      </div> */}
-    </div>
+        </Stepper.Step>
+        <Stepper.Step label="4nd Year (BSc)" description="Strathclyde (2024)">
+          As my time at university drew to an end I managed to juggle my
+          graduating and most difficult year alongside a part-time fullstack
+          software engineering role at GuitarGuitar. My primary focus was my
+          disseration as that made up for 50% of my entire degree and 75% of my
+          final year. My project was to create a Mark Management system for the
+          university, a system in which staff at the university could upload
+          their class marks for allocated courses and view insights into student
+          performances. This project is available at my GitHub
+        </Stepper.Step>
+      </Stepper>
+    </Card>
   );
 }
