@@ -1,29 +1,43 @@
+import { Card, Text, useMantineTheme } from "@mantine/core";
 import React from "react";
 import Typewriter from "typewriter-effect";
-const Hero = () => {
+export const Hero = () => {
+  const theme = useMantineTheme();
   return (
     <>
-      <div className="relative text-sky-400">
-        <div className="inset-0 bg-sky-400 rounded-l opacity-50 blur absolute"></div>
-        <div className="relative block bg-black rounded-xl p-4 m-3 text-xxxl font-semibold text-center">
-          <Typewriter
-            onInit={(typeWriter) => {
-              typeWriter
-                .typeString("Hey, my names Paddy")
-                .pauseFor(1000)
-                .deleteAll()
-                .pauseFor(500)
-                .typeString("Hey, my names Paddy")
-                .start();
-            }}
-          />
-          <p className="text-xl font-semibold text-sky-600">
-            A full stack software engineer from Glasgow, Scotland.
-          </p>
-        </div>
-      </div>
+      <Card
+        bg="black"
+        pos="relative"
+        display="block"
+        radius="md"
+        c={theme.colors.blue[4]}
+        p={4}
+        px={10}
+        fw={400}
+        fz={35}
+        ta="center"
+        style={{
+          border: "3px solid #9ecaed",
+          outline: "none",
+          borderColor: "#9ecaed",
+          boxShadow: "0 0 10px #9ecaed",
+        }}
+      >
+        <Typewriter
+          onInit={(typeWriter) => {
+            typeWriter
+              .typeString("Hey, my names Paddy")
+              .pauseFor(1000)
+              .deleteAll()
+              .pauseFor(500)
+              .typeString("Hey, my names Paddy")
+              .start();
+          }}
+        />
+        <Text fz="xl">
+          A full stack software engineer from Glasgow, Scotland.
+        </Text>
+      </Card>
     </>
   );
 };
-
-export default Hero;
