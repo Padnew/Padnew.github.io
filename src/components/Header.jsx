@@ -1,27 +1,30 @@
+import { Title, Tabs, Stack } from "@mantine/core";
 import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="bg-black p-4 text-sky-400">
-      <nav className="justify-between items-center">
-        <span className="text-xl">/paddy.software/</span>
-        <div>
+    <Stack gap={5}>
+      <Title fw={400} ml={5}>
+        /paddy.software/
+      </Title>
+      <Tabs defaultValue="home" color="red" variant="outline">
+        <Tabs.List mx={0} px={0}>
           <Link to="/home">
-            <span className="hover:text-red-500 mr-2">home</span>
+            <Tabs.Tab value="home">home</Tabs.Tab>
           </Link>
-          <span>/</span>
           <Link to="/studies">
-            <span className="hover:text-red-500 mx-2">studies</span>
+            <Tabs.Tab value="studies">studies</Tabs.Tab>
           </Link>
-          <span>/</span>
           <Link to="/stack">
-            <span className="hover:text-red-500 mx-2">my stack</span>
+            <Tabs.Tab value="stack">my stack</Tabs.Tab>
           </Link>
-          <span>/</span>
-        </div>
-      </nav>
-    </div>
+          <Link to="/experience">
+            <Tabs.Tab value="experience">experience</Tabs.Tab>
+          </Link>
+        </Tabs.List>
+      </Tabs>
+    </Stack>
   );
 }
 
