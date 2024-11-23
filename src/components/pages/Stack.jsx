@@ -2,7 +2,7 @@ import React from "react";
 import LanguagesBlock from "../LanguagesBlock";
 import ToolsBlock from "../ToolsBlock";
 
-export default function Stack() {
+export default function TechStack() {
   return (
     <>
       <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center overflow">
