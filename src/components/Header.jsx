@@ -11,7 +11,7 @@ function Header() {
       <Tabs defaultValue="home" variant="outline" color="red">
         <Tabs.List mx={0} px={0}>
           <Link to="/home">
-            <Tabs.Tab value="home" fz={20}>
+            <Tabs.Tab value="home" fz={18}>
               home
             </Tabs.Tab>
           </Link>
