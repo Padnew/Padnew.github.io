@@ -1,59 +1,14 @@
 import React from "react";
-import {
-  DiPython,
-  DiCode,
-  DiHaskell,
-  DiJavascript,
-  DiJava,
-  DiPhp,
-  DiHtml5,
-} from "react-icons/di";
-const skills = (
-    "Python",
-    "Java",
-    "Sql",
-    "Haskell",
-    "C#",
-    "HTML5",
-    "PHP",
-    "TypeScript"
-    );
+import { SimpleGrid } from "@mantine/core";
+import { languagesArray } from "../data/Skills.tsx";
+import SkillAndIcon from "./shared/SkillAndIcon.tsx";
 function LanguagesBlock() {
   return (
-    <div className="grid grid-cols-3 grid-flow-row text-xxl justify-between place-items-center p-3">
-            <div className="flex align-center text-center">
-        Python
-        <DiPython className="text-xxxxl text-red-500" />
-      </div>
-      <div className="flex align-center">
-        Java
-        <DiJava className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
-        SQL
-        <DiCode className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
-        Haskell
-        <DiHaskell className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
-        C#
-        <DiCode className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
-        HTML5
-        <DiHtml5 className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
-        PHP
-        <DiPhp className="text-xxxxl align-center text-red-500" />
-      </div>
-      <div className="flex align-center">
-        JavaScript
-        <DiJavascript className="text-xxxxl align-center text-red-500" />
-      </div>
-    </div>
+    <SimpleGrid cols={3}>
+      {languagesArray.map((skill) => {
+        return <SkillAndIcon key={skill.text} skill={skill} />;
+      })}
+    </SimpleGrid>
   );
 }
 
