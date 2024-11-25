@@ -1,33 +1,48 @@
 import React from "react";
 import LanguagesBlock from "../LanguagesBlock";
 import ToolsBlock from "../ToolsBlock";
+import { Card, Title, Group, useMantineTheme, Text } from "@mantine/core";
 
 export default function TechStack() {
+  const theme = useMantineTheme();
   return (
     <>
-      <div className="block bg-black p-4 m-6 rounded content-center w-4/5 text-center ">
-        <h1 className="block text-xxxl mr-2 font-semibold text-center text-sky-400">
-          My stack
-        </h1>
-        <p>
-          I've been lucky enough to be exposed to a good variety of
-          technologies, languages and frameworks. Through my career I hope to
-          expand my knowledge and experience of different tech as I'm always up
-          for learning something new.
-        </p>
-        <div className="bg-black rounded grid grid-cols-2 mt-3">
-          <div className="bg-gray-900 p-2 mr-1 rounded px-2 ">
-            <h1 className="text-xxl font-bold mb-2 text-sky-400">
-              Frameworks and Tools
-            </h1>
+      <Card
+        display="block"
+        bg="black"
+        ta="center"
+        w="75%"
+        c={theme.colors.blue[4]}
+        mt={15}
+      >
+        <Title fz={32} fw={400} mb={10}>
+          Stack
+        </Title>
+        <Text ta="left">
+          Through both education, personal studies and professional experience I
+          have gained experience programming in a variety of languages. I have
+          thouroughly covered functional and standard programming, styling,
+          scripting as well as source control
+        </Text>
+        <Group justify="space-between" grow>
+          <Card
+            p={10}
+            bg={theme.colors.dark[1]}
+            c={theme.colors.blue[4]}
+            justify="center"
+          >
             <ToolsBlock />
-          </div>
-          <div className="bg-gray-900 p-2 rounded px-2">
-            <h1 className="text-xxl font-bold mb-2 text-sky-400">Languages</h1>
+          </Card>
+          <Card
+            p={10}
+            bg={theme.colors.dark[1]}
+            c={theme.colors.blue[4]}
+            justify="center"
+          >
             <LanguagesBlock />
-          </div>
-        </div>
-      </div>
+          </Card>
+        </Group>
+      </Card>
     </>
   );
 }
