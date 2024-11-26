@@ -1,7 +1,7 @@
 import React from "react";
-import LanguagesBlock from "../LanguagesBlock";
-import ToolsBlock from "../ToolsBlock";
-import { Card, Title, Group, useMantineTheme, Text } from "@mantine/core";
+import { Card, Title, Group, useMantineTheme, Text, Grid } from "@mantine/core";
+import { languagesArray, toolsArray } from "../../data/Skills.tsx";
+import SkillAndIcon from "../shared/SkillAndIcon.tsx";
 
 export default function TechStack() {
   const theme = useMantineTheme();
@@ -11,9 +11,10 @@ export default function TechStack() {
         display="block"
         bg="black"
         ta="center"
-        w="75%"
         c={theme.colors.blue[4]}
         mt={15}
+        h="fit-content"
+        w="75%"
       >
         <Title fz={32} fw={400} mb={10}>
           Stack
@@ -24,22 +25,31 @@ export default function TechStack() {
           thouroughly covered functional and standard programming, styling,
           scripting as well as source control
         </Text>
-        <Group justify="space-between" grow>
-          <Card
-            p={10}
-            bg={theme.colors.dark[1]}
-            c={theme.colors.blue[4]}
-            justify="center"
-          >
-            <ToolsBlock />
+        <Group justify="space-between" grow align="start" mt={10}>
+          <Card bg={theme.colors.dark[1]} c={theme.colors.blue[4]} ta="center">
+            <Title order={2} mb={10} fw={400}>
+              Tools
+            </Title>
+            <Grid span={{ base: 12, md: 6, lg: 3 }} justify="center">
+              {toolsArray.map((tool) => {
+                return <SkillAndIcon key={tool.text} skill={tool} />;
+              })}
+            </Grid>
           </Card>
           <Card
-            p={10}
             bg={theme.colors.dark[1]}
             c={theme.colors.blue[4]}
             justify="center"
+            h="fit-content"
           >
-            <LanguagesBlock />
+            <Title order={2} mb={10} fw={400}>
+              Languages
+            </Title>
+            <Grid span={{ base: 12, md: 6, lg: 3 }} justify="center">
+              {languagesArray.map((tool) => {
+                return <SkillAndIcon key={tool.text} skill={tool} />;
+              })}
+            </Grid>
           </Card>
         </Group>
       </Card>

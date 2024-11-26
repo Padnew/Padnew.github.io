@@ -8,7 +8,7 @@ interface Props {
 
 export default function SkillAndIcon({ skill }: Props) {
   return (
-    <Flex>
+    <Flex p={5}>
       {skill.text}
       <skill.icon size={24} color="red" />
     </Flex>

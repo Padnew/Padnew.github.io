@@ -6,13 +6,18 @@ import {
   DiHaskell,
   DiHtml5,
   DiJava,
-  DiJavascript,
   DiPhp,
   DiPostgresql,
   DiPython,
   DiReact,
+  DiGit,
 } from "react-icons/di";
-import { SiMicrosoftsqlserver, SiPytorch, SiTailwindcss } from "react-icons/si";
+import {
+  SiMicrosoftsqlserver,
+  SiPytorch,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 export interface IconWithText {
   text: string;
@@ -27,7 +32,7 @@ export const languagesArray: IconWithText[] = [
   { icon: DiCode, text: "C#" },
   { icon: DiHtml5, text: "HTML5" },
   { icon: DiPhp, text: "PHP" },
-  { icon: DiJavascript, text: "JavaScript" },
+  { icon: SiTypescript, text: "TypeScript" },
 ];
 
 export const toolsArray: IconWithText[] = [
@@ -37,5 +42,6 @@ export const toolsArray: IconWithText[] = [
   { icon: SiTailwindcss, text: "Tailwind" },
   { icon: DiBootstrap, text: "Bootstrap" },
   { icon: SiPytorch, text: "PyTorch" },
-  { icon: SiMicrosoftsqlserver, text: "MSSQL Server" },
+  { icon: SiMicrosoftsqlserver, text: "MSQL Server" },
+  { icon: DiGit, text: "Git" },
 ];
