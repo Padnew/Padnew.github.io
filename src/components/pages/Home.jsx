@@ -1,13 +1,13 @@
 import React from "react";
 import { SocialsBlock } from "../SocialsBlock";
 import { Hero } from "../Hero";
-import { Stack } from "@mantine/core";
+import { Flex } from "comitium-ui";
 
 export default function Home() {
   return (
-    <Stack mt={20}>
+    <Flex direction="column" style={{ marginTop: 15 }}>
       <Hero />
       <SocialsBlock />
-    </Stack>
+    </Flex>
   );
 }
