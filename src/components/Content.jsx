@@ -4,7 +4,7 @@ import Home from "./sections/Home";
 import Studies from "./sections/Studies";
 import TechStack from "./sections/TechStack";
 import { Tabs } from "comitium-ui";
-import Experience from "./sections/experience";
+import Experience from "./sections/Experience";
 
 export default function Content() {
   return (
