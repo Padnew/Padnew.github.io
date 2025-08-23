@@ -1,10 +1,10 @@
 import { Title, Stack } from "@mantine/core";
 import React from "react";
-import Home from "./pages/Home";
-import Studies from "./pages/Studies";
-import TechStack from "./pages/TechStack";
+import Home from "./sections/Home";
+import Studies from "./sections/Studies";
+import TechStack from "./sections/TechStack";
 import { Tabs } from "comitium-ui";
-import Experience from "./pages/experience";
+import Experience from "./sections/experience";
 
 export default function Content() {
   return (
