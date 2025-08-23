@@ -1,8 +1,10 @@
-import { Title, Tabs, Stack } from "@mantine/core";
+import { Title, Stack } from "@mantine/core";
 import React from "react";
 import Home from "./pages/Home";
 import Studies from "./pages/Studies";
 import TechStack from "./pages/TechStack";
+import { Tabs } from "comitium-ui";
+import Experience from "./pages/experience";
 
 export default function Content() {
   return (
@@ -10,31 +12,27 @@ export default function Content() {
       <Title order={2} fw={400} ml={5}>
         /paddy.software
       </Title>
-      <Tabs>
-        <Tabs.List>
-          <Tabs.Tab value="home" fz={16}>
-            /home
-          </Tabs.Tab>
-          <Tabs.Tab value="studies" fz={16}>
-            /studies
-          </Tabs.Tab>
-          <Tabs.Tab value="stack" fz={16}>
-            /techstack
-          </Tabs.Tab>
-          <Tabs.Tab value="experience" fz={16}>
-            /experience
-          </Tabs.Tab>
-        </Tabs.List>
-        <Tabs.Tab ta="home">
-          <Home />
-        </Tabs.Tab>
-        <Tabs.Tab value="studies">
-          <Studies />
-        </Tabs.Tab>
-        <Tabs.Tab value="stack">
-          <TechStack />
-        </Tabs.Tab>
-      </Tabs>
+      <Tabs
+        tabs={[
+          {
+            label: "Home",
+            content: <Home />,
+          },
+          {
+            label: "Studies",
+            content: <Studies />,
+          },
+          {
+            label: "TechStack",
+            content: <TechStack />,
+          },
+          {
+            label: "Experience",
+            content: <Experience />,
+          },
+        ]}
+        defaultTab={0}
+      />
     </Stack>
   );
 }
