@@ -1,30 +1,12 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header.jsx";
-import TechStack from "./components/pages/TechStack.jsx";
-import Studies from "./components/pages/studies";
-import Home from "./components/pages/Home.jsx";
-import Experience from "./components/pages/experience.jsx";
-import { Stack, Box } from "@mantine/core";
+import Content from "./components/Content.jsx";
 import Classes from "./App.module.scss";
+import { Container } from "comitium-ui";
 function App() {
   return (
-    <Box className={Classes.global}>
-      <Header />
-      <Stack justify="center" align="center">
-        <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-
-          <Route exact path="/home" element={<Home />}></Route>
-
-          <Route exact path="/studies" element={<Studies />}></Route>
-
-          <Route exact path="/stack" element={<TechStack />}></Route>
-
-          <Route exact path="/experience" element={<Experience />}></Route>
-        </Routes>
-      </Stack>
-    </Box>
+    <Container className={Classes.global}>
+      <Content className={Classes.global} />
+    </Container>
   );
 }
 
