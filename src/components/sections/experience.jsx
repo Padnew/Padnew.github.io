@@ -1,32 +1,21 @@
-import {
-  Text,
-  Card,
-  Title,
-  useMantineTheme,
-  Timeline,
-  Flex,
-} from "@mantine/core";
+import { Card, Flex, Text } from "comitium-ui";
 import React from "react";
-import { DiCode } from "react-icons/di";
 
 export default function Experience() {
-  const theme = useMantineTheme();
   return (
-    <>
-      <Card
-        display="block"
-        bg="black"
-        ta="center"
-        c={theme.colors.blue[4]}
-        mt={15}
-        h="fit-content"
-        w="75%"
-      >
-        <Title fz={32} fw={400} mb={10}>
-          Experience
-        </Title>
-        <Flex justify="center">
-          <Timeline active={1} bulletSize={24} lineWidth={2}>
+    <Card
+      style={{
+        display: "block",
+        textAlign: "center",
+        color: "powderblue",
+        marginTop: 15,
+      }}
+    >
+      <Text size="xl" fontWeight="bold" style={{ marginBottom: "15px" }}>
+        Experience
+      </Text>
+      <Flex>
+        {/* <Timeline active={1} bulletSize={24} lineWidth={2}>
             <Timeline.Item
               bullet={<DiCode />}
               title="Full Stack Software Engineer @ GuitarGuitar"
@@ -100,9 +89,8 @@ export default function Experience() {
                 Sep 2022
               </Text>
             </Timeline.Item>
-          </Timeline>
-        </Flex>
-      </Card>
-    </>
+          </Timeline> */}
+      </Flex>
+    </Card>
   );
 }
