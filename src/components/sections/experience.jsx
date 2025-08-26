@@ -6,14 +6,10 @@ export default function Experience() {
     <Card
       style={{
         display: "block",
-        textAlign: "center",
-        color: "powderblue",
         marginTop: 15,
       }}
     >
-      <Text size="xl" fontWeight="bold" style={{ marginBottom: "15px" }}>
-        Experience
-      </Text>
+      <Text size={32}>Experience</Text>
       <Flex>
         {/* <Timeline active={1} bulletSize={24} lineWidth={2}>
             <Timeline.Item
