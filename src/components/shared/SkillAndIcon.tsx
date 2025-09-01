@@ -1,6 +1,6 @@
 import { Flex } from "@mantine/core";
 import React from "react";
-import { IconWithText } from "../../data/Skills";
+import { IconWithText } from "../../data/SiteData";
 
 interface Props {
   skill: IconWithText;
