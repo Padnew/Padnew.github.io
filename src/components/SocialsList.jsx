@@ -2,11 +2,11 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { LinkTo, Flex } from "comitium-ui";
-import Socials from "../data/SocialsData";
+import { SocialsData } from "../data/SiteData.tsx";
 export default function SocialsList() {
   return (
     <Flex direction="row">
-      {Socials.map((item) => (
+      {SocialsData.map((item) => (
         <motion.div
           key={item.id}
           whileHover={{ scale: 1.1 }}

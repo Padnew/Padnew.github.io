@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Flex, Text } from "comitium-ui";
-import { languagesArray, toolsArray } from "../../data/Skills.tsx";
+import { languagesArray, toolsArray } from "../../data/SiteData.tsx";
 import SkillAndIcon from "../shared/SkillAndIcon.tsx";
 
 export default function TechStack() {
