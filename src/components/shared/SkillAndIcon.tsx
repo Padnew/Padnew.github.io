@@ -1,4 +1,4 @@
-import { Flex } from "@mantine/core";
+import { Flex } from "comitium-ui";
 import React from "react";
 import { IconWithText } from "../../data/SiteData";
 
@@ -8,9 +8,9 @@ interface Props {
 
 export default function SkillAndIcon({ skill }: Props) {
   return (
-    <Flex p={5}>
+    <Flex spacing={5}>
       {skill.text}
-      <skill.icon size={24} color="red" />
+      <skill.icon size={22} color="red" />
     </Flex>
   );
 }
