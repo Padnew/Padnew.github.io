@@ -19,16 +19,16 @@ export default function Content() {
             content: <Home />,
           },
           {
-            label: "Studies",
-            content: <Studies />,
+            label: "Experience",
+            content: <Experience />,
           },
           {
             label: "TechStack",
             content: <TechStack />,
           },
           {
-            label: "Experience",
-            content: <Experience />,
+            label: "Education",
+            content: <Studies />,
           },
         ]}
         defaultTab={0}
