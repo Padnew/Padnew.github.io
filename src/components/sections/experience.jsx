@@ -1,92 +1,65 @@
-import { Card, Flex, Text } from "comitium-ui";
+import { AutoGrid, Card, Flex, Header, Text } from "comitium-ui";
 import React from "react";
 
 export default function Experience() {
   return (
-    <Card
-      style={{
-        display: "block",
-        marginTop: 15,
-      }}
-    >
-      <Text size={32}>Experience</Text>
-      <Flex>
-        {/* <Timeline active={1} bulletSize={24} lineWidth={2}>
-            <Timeline.Item
-              bullet={<DiCode />}
-              title="Full Stack Software Engineer @ GuitarGuitar"
-              c={theme.colors.red[5]}
-            >
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Modernizing legacy systems in crucial areas
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Managing support tasks
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Championed entire project version upgrades
-              </Text>
-              <Text size="xs" mt={4} c="dimmed">
-                Sep 23 - Current
-              </Text>
-            </Timeline.Item>
+    <Card>
+      <AutoGrid>
+        <Flex direction="column" spacing={5}>
+          <Text size={32}>Experience</Text>
+          <Header
+            heading="Full Stack Software Engineer @ Guitarguitar"
+            subHeading="June 2023 - Current"
+          />
 
-            <Timeline.Item
-              title="Software Engineer Intern @ GuitarGuitar"
-              c={theme.colors.red[5]}
-              bullet={<DiCode />}
-            >
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Writing live code from Day 1
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Championed 2 main projects
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Improving warehouse efficiency significantly
-              </Text>
+          <Text size="sm">
+            - Developing, testing and deploying to codebases across multiple
+            projects through Azure, primarily in .NET(C#), React and SQL
+          </Text>
+          <Text size="sm">
+            - Led and owned the migration of core legacy systems from ASP.NET to
+            React
+          </Text>
+          <Text size="sm">
+            - Championed the redevelopment of a customer returns portal leading
+            to a projected company saving of over £120,000 per year on redundant
+            returns
+          </Text>
+          <Text size="sm">
+            - Integrated and managed a new primary payment provider whilst
+            allowing seamless flow with the secondary provider and following PCI
+            compliance throughout
+          </Text>
+          <Text size="sm">
+            - Entrusted with core package upgrades and platform specific
+            maintenance in NPM and NuGet
+          </Text>
+          <Text size="sm">
+            - Integrated and maintained Cypress.io testing throughout codebases
+            with an 85% coverage
+          </Text>
+          <Text size="sm">
+            - Led and owned the creation of adaptive warehouse maintenance
+            systems which aided in over a 70% efficiency improvement across
+            logistics and warehouse staff
+          </Text>
+        </Flex>
+        <Flex direction="column" spacing={5}>
+          <Text size={32}>Hackathons & Challenges</Text>
 
-              <Text size="xs" mt={4} c="dimmed">
-                June 2023 - Sep 2023
-              </Text>
-            </Timeline.Item>
-            <Timeline.Item
-              title="Code Olympics 2023"
-              c={theme.colors.red[5]}
-              bullet={<DiCode />}
-            >
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Took 3rd Place overall in a team of 3
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Bashed through Leetcode/Hackerank style questions
-              </Text>
+          <Header heading="Code Olympics 2023" subHeading="Mar 2023" />
+          <Text size="sm">- Took 3rd Place overall with half a team</Text>
+          <Text size="sm">- Took 3rd Place in SAS challenges</Text>
+          <Text size="sm">
+            - Bashed through Leetcode/Hackerank style questions
+          </Text>
 
-              <Text size="xs" mt={4} c="dimmed">
-                Mar 2023
-              </Text>
-            </Timeline.Item>
-            <Timeline.Item
-              title="GUTS 2022 Hackathon"
-              c={theme.colors.red[5]}
-              bullet={<DiCode />}
-            >
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Won with a team of 3 friends
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Integrated a Chrome Tool
-              </Text>
-              <Text c={theme.colors.blue[4]} size="sm">
-                - Built a Full-stack product viewer
-              </Text>
-
-              <Text size="xs" c="dimmed" mt={4}>
-                Sep 2022
-              </Text>
-            </Timeline.Item>
-          </Timeline> */}
-      </Flex>
+          <Header heading="GUTS 2022 Hackathon" subHeading="Sep 2022" />
+          <Text size="sm">- Won with a team of 3 friends</Text>
+          <Text size="sm">- Integrated a Chrome Tool</Text>
+          <Text size="sm">- Built a Full-stack product viewer</Text>
+        </Flex>
+      </AutoGrid>
     </Card>
   );
 }
