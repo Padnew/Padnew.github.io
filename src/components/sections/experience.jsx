@@ -44,20 +44,34 @@ export default function Experience() {
             logistics and warehouse staff
           </Text>
         </Flex>
-        <Flex direction="column" spacing={5}>
+        <Flex direction="column" spacing={20}>
           <Text size={32}>Hackathons & Challenges</Text>
-
-          <Header heading="Code Olympics 2023" subHeading="Mar 2023" />
-          <Text size="sm">- Took 3rd Place overall with half a team</Text>
-          <Text size="sm">- Took 3rd Place in SAS challenges</Text>
-          <Text size="sm">
-            - Bashed through Leetcode/Hackerank style questions
-          </Text>
-
-          <Header heading="GUTS 2022 Hackathon" subHeading="Sep 2022" />
-          <Text size="sm">- Won with a team of 3 friends</Text>
-          <Text size="sm">- Integrated a Chrome Tool</Text>
-          <Text size="sm">- Built a Full-stack product viewer</Text>
+          <Flex direction="column" spacing={0}>
+            <Header heading="Code Olympics 2023" subHeading="Mar 2023" />
+            <Text size="sm">- Took 3rd Place overall with half a team</Text>
+            <Text size="sm">- Took 3rd Place in SAS challenges</Text>
+            <Text size="sm">
+              - Bashed through Leetcode/Hackerank style questions for 24 hours
+            </Text>
+            <Text size="sm">
+              - Tested on a variety of software topics such as algorithms,
+              networking and data structures
+            </Text>
+          </Flex>
+          <Flex direction="column" spacing={0}>
+            <Header heading="GUTS 2022 Hackathon" subHeading="Sep 2022" />
+            <Text size="sm">- Won 1st place in our category</Text>
+            <Text size="sm">
+              - Built a full stack web-app in React for product visualisation
+            </Text>
+            <Text size="sm">
+              - Full project pulled data from bespoke RESTful APIs
+            </Text>
+            <Text size="sm">
+              - Enabling streamlined e-commerce discovery via YouTube
+              integrations
+            </Text>
+          </Flex>
         </Flex>
       </AutoGrid>
     </Card>
