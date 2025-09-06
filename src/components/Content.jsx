@@ -1,17 +1,14 @@
-import { Title, Stack } from "@mantine/core";
 import React from "react";
 import Home from "./sections/Home";
 import Studies from "./sections/Studies";
 import TechStack from "./sections/TechStack";
-import { Tabs } from "comitium-ui";
+import { Tabs, Flex, Header } from "comitium-ui";
 import Experience from "./sections/Experience";
 
 export default function Content() {
   return (
-    <Stack gap={5}>
-      <Title order={2} fw={400} ml={5}>
-        /paddy.software
-      </Title>
+    <Flex direction="column" spacing={5}>
+      <Header size="lg" heading="/paddy.software" />
       <Tabs
         tabs={[
           {
@@ -33,6 +30,6 @@ export default function Content() {
         ]}
         defaultTab={0}
       />
-    </Stack>
+    </Flex>
   );
 }
