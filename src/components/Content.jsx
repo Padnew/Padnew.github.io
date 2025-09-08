@@ -20,7 +20,7 @@ export default function Content() {
             content: <Experience />,
           },
           {
-            label: "TechStack",
+            label: "Tech",
             content: <TechStack />,
           },
           {
